@@ -6,8 +6,8 @@ def ConquestCampaign(N, M, L, battalion):
             row.append(0)
         map.append(row)
     
-    for i in range (len(battalion)):
-        map[battalion[i][0]][battalion[i][1]] = 1
+    for i in range (int(len(battalion)/2)):
+        map[battalion[i*2]-1][battalion[i*2+1]-1] = 1
         
     
     count = 1
